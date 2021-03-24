@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "SansBold";
+  src: url('../fonts/PTSans-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SansRegular";
+  src: url('../fonts/PTSans-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  background: #0072BC;
+  height: 80px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+  }
+
+  &__websiteName {
+    color: white;
+    font-size: 32px;
+    padding-left: 10px;
+    font-family: "SansBold";
+    cursor: pointer;
+  }
+
+  &__button {
+    background: #F26522;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 1px;
+    font-size: 26px;
+    font-family: "SansBold";
+    cursor: pointer;
+  }
+}
+
+.central-block {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.block1 {
+  text-align: center;
+
+  &__mainText {
+    font-size: 45px;
+    font-family: "SansBold";
+  }
+
+  &__secondText {
+    font-size: 30px;
+    font-family: "SansRegular";
+    padding-top: 25px;
+  }
+
+  &__title {
+    margin: 30px 0px;
+  }
+}
+
+.block2 {
+  font-weight: bold;
+  font-size: 20px;
+
+  &__actualPosition {
+    font-size: 30px;
+    font-family: "SansBold";
+  }
+}
+
+.block3 {
+  margin-top: 35px;
+
+  &__rolls {
+    display: flex;
+  }
+
+  &__topRoll {
+    padding-top: 30px;
+  }
+
+  &__roll {
+    width: 255px;
+    border: 2px solid #adacac;
+    border-radius: 10px;
+    height: 490px;
+    margin-right: 10px;
+  }
+
+  &__downRoll {
+    text-align: center;
+  }
+
+  &__orderRoll {
+    background: transparent;
+    border: none;
+    color: #06811a;
+    font-size: 17px;
+    font-family: "SansBold";
+    padding: 20px 0px;
+    cursor: pointer;
+  }
+
+  &__nameOfRoll {
+    font-size: 22px;
+    font-family: "SansBold";
+    color: #8e0000;
+  }
+
+  &__descriptionPoem {
+    font-size: 16px;
+    font-family: "SansRegular";
+    padding-top: 10px;
+  }
+
+  &__setRoll {
+    width: 375px;
+    height: 490px;
+  }
+}
+
+.slide {
+  background: #6DCFF6;
+  height: 700px;
+  margin-top: 40px;
+
+  &__offers {
+    font-size: 45px;
+    font-family: "SansBold";
+    color: white;
+    text-align: center;
+    padding: 35px 0px;
+  }
+
+  &__bestOffer {
+    text-shadow: 1px 7px 16px black;
+  }
+}
+
+.footer {
+  background: white;
+  text-align: center;
+  height: 75px;
+
+  &__year {
+    margin-top: 35px;
+    font-size: 22px;
+    font-family: "SansBold";
+  }
+}
+
+.slick-slider {
+  overflow: hidden;
+}
+
+.slick-dots li{
+  margin-right: 30px;
+}
+.slick-dots li button {
+  background: white;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  opacity: .5;
+}
+
+.slick-dots .slick-active button {
+  //background: red;
+  color: white;
+  transition: 1s;
+  opacity: 1;
+}
+
+.slick-dots button {
+  width: 35px;
+  height: 35px;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.slick-arrow {
+  z-index: 10;
+  position: absolute;
+  font-size: 0;
+  height: 50px;
+}
+
+.slick-prev {
+  background: url("../slider_img/leftarrow.png") 0 0 / 100% no-repeat;
+  margin-top: 457px;
+  right: 56%;
+  width: 28px;
+}
+
+.slick-next {
+  width: 28px;
+  background: url("../slider_img/rightarrow.png") 0 0/100% no-repeat;
+  right: 44%;
+  margin-top: 57px;
+}
+
+
+@import "mobile_adaptive.scss";

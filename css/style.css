@@ -1,0 +1,272 @@
+@font-face {
+  font-family: "SansBold";
+  src: url("../fonts/PTSans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SansRegular";
+  src: url("../fonts/PTSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  margin: 0;
+}
+
+.header {
+  background: #0072BC;
+  height: 80px;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+}
+.header__websiteName {
+  color: white;
+  font-size: 32px;
+  padding-left: 10px;
+  font-family: "SansBold";
+  cursor: pointer;
+}
+.header__button {
+  background: #F26522;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 1px;
+  font-size: 26px;
+  font-family: "SansBold";
+  cursor: pointer;
+}
+
+.central-block {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.block1 {
+  text-align: center;
+}
+.block1__mainText {
+  font-size: 45px;
+  font-family: "SansBold";
+}
+.block1__secondText {
+  font-size: 30px;
+  font-family: "SansRegular";
+  padding-top: 25px;
+}
+.block1__title {
+  margin: 30px 0px;
+}
+
+.block2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.block2__actualPosition {
+  font-size: 30px;
+  font-family: "SansBold";
+}
+
+.block3 {
+  margin-top: 35px;
+}
+.block3__rolls {
+  display: flex;
+}
+.block3__topRoll {
+  padding-top: 30px;
+}
+.block3__roll {
+  width: 255px;
+  border: 2px solid #adacac;
+  border-radius: 10px;
+  height: 490px;
+  margin-right: 10px;
+}
+.block3__downRoll {
+  text-align: center;
+}
+.block3__orderRoll {
+  background: transparent;
+  border: none;
+  color: #06811a;
+  font-size: 17px;
+  font-family: "SansBold";
+  padding: 20px 0px;
+  cursor: pointer;
+}
+.block3__nameOfRoll {
+  font-size: 22px;
+  font-family: "SansBold";
+  color: #8e0000;
+}
+.block3__descriptionPoem {
+  font-size: 16px;
+  font-family: "SansRegular";
+  padding-top: 10px;
+}
+.block3__setRoll {
+  width: 375px;
+  height: 490px;
+}
+
+.slide {
+  background: #6DCFF6;
+  height: 700px;
+  margin-top: 40px;
+}
+.slide__offers {
+  font-size: 45px;
+  font-family: "SansBold";
+  color: white;
+  text-align: center;
+  padding: 35px 0px;
+}
+.slide__bestOffer {
+  text-shadow: 1px 7px 16px black;
+}
+
+.footer {
+  background: white;
+  text-align: center;
+  height: 75px;
+}
+.footer__year {
+  margin-top: 35px;
+  font-size: 22px;
+  font-family: "SansBold";
+}
+
+.slick-slider {
+  overflow: hidden;
+}
+
+.slick-dots li {
+  margin-right: 30px;
+}
+
+.slick-dots li button {
+  background: white;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.slick-dots .slick-active button {
+  color: white;
+  transition: 1s;
+  opacity: 1;
+}
+
+.slick-dots button {
+  width: 35px;
+  height: 35px;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.slick-arrow {
+  z-index: 10;
+  position: absolute;
+  font-size: 0;
+  height: 50px;
+}
+
+.slick-prev {
+  background: url("../slider_img/leftarrow.png") 0 0/100% no-repeat;
+  margin-top: 457px;
+  right: 56%;
+  width: 28px;
+}
+
+.slick-next {
+  width: 28px;
+  background: url("../slider_img/rightarrow.png") 0 0/100% no-repeat;
+  right: 44%;
+  margin-top: 57px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-block {
+    width: 100%;
+  }
+
+  .central-block {
+    width: 100%;
+  }
+
+  .block1__mainText {
+    font-size: 40px;
+  }
+
+  .block2__actualPosition {
+    text-align: center;
+  }
+
+  .block3__topRoll {
+    padding-top: 0px;
+    margin-right: 40px;
+  }
+  .block3__rolls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .block3__roll {
+    margin-right: 0;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 6px 32px -10px #5f0808;
+    margin-bottom: 75px;
+    transition: 1s linear;
+  }
+  .block3__roll:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1.2);
+  }
+  .block3__nameOfRoll {
+    font-size: 25px;
+  }
+  .block3__orderRoll {
+    font-size: 22px;
+  }
+  .block3__descriptionPoem {
+    padding-top: 20px;
+  }
+
+  .slick-prev {
+    margin-top: 397px;
+    right: 61%;
+  }
+
+  .slick-next {
+    right: 39%;
+    margin-top: 56px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .slick-prev {
+    margin-top: 383px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
